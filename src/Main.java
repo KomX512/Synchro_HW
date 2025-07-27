@@ -1,6 +1,5 @@
 
 import java.util.*;
-import java.util.concurrent.*;
 
 public class Main {
 
@@ -13,7 +12,6 @@ public class Main {
         final int GENERATION_LENGHT = 100;
 
         List<Thread> threadsList = new ArrayList<>();
-        ExecutorService threadPool = Executors.newCachedThreadPool();
 
         Thread observerThread = new Thread(() -> {
             int maxkey = 0;
